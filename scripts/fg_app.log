@@ -1,0 +1,189 @@
+Record 0_before_start ...
+--------------------------------------------------------------------------------------------------------------
+MemTotal:        1204808 kB
+MemFree:          907444 kB
+Buffers:              52 kB
+Cached:            55472 kB
+--------------------------------------------------------------------------------------------------------------
+        Process Name        PID        RSS        PSS    PVR_MEM        SHC        SHD        PRC        PRD
+==============================================================================================================
+           WebAppMgr       1705      24940      16851       2540      10964          8       4796       9172
+     surface-manager       1628      92060      84065       8160      11280         76       3292      77412
+--------------------------------------------------------------------------------------------------------------
+               Total     117000     100916      10700
+
+======            WebAppMgr        Pss ==========================
+[heap]                                                                   5248 K
+/usr/lib/libQt5WebKit.so.5.0.0                                           3148 K
+/usr/lib/libQt5WebKit.so.5.0.0                                            932 K
+/usr/lib/libQt5Core.so.5.0.0                                              811 K
+/usr/lib/libQt5V8.so.5.0.0                                                710 K
+/usr/lib/libQt5Widgets.so.5.0.0                                           494 K
+/usr/lib/libWebAppMgr.so.1.0.0                                            300 K
+/usr/lib/libQt5Gui.so.5.0.0                                               218 K
+/usr/lib/libQt53D.so.5.0.0                                                212 K
+/usr/lib/libQt5Qml.so.5.0.0                                               189 K
+======      surface-manager        Pss ==========================
+[heap]                                                                   8300 K
+/usr/lib/libQt5Quick.so.5.0.0                                             945 K
+/usr/lib/libQt5V8.so.5.0.0                                                774 K
+/usr/lib/libQt5Qml.so.5.0.0                                               685 K
+/usr/lib/libusc.so.0.1                                                    672 K
+/usr/lib/libQt5Core.so.5.0.0                                              599 K
+/usr/lib/libQt5Gui.so.5.0.0                                               544 K
+/usr/lib/libGLESv2.so.2.0                                                 395 K
+/usr/lib/libglslcompiler.so.0.1                                           330 K
+/usr/lib/qt5/plugins/platforms/libqstarfishegl.so                         320 K
+Launch com.palm.app.baremoon2 ...
+{"returnValue":true,"processId":"1001"}
+Sleep 120 secs ...
+Record 1_after_launched ...
+--------------------------------------------------------------------------------------------------------------
+MemTotal:        1204808 kB
+MemFree:          795152 kB
+Buffers:              52 kB
+Cached:            64440 kB
+--------------------------------------------------------------------------------------------------------------
+        Process Name        PID        RSS        PSS    PVR_MEM        SHC        SHD        PRC        PRD
+==============================================================================================================
+        QtWebProcess       2164      47812      37938      32676      14208          8       8108      25488
+           WebAppMgr       1705      30440      18105      27860      17584          8       1476      11372
+  QtWebProcess + WAM                 78252      56043      60536
+     surface-manager       1628      92336      82787      24368      12956         76       1700      77604
+--------------------------------------------------------------------------------------------------------------
+               Total     170588     138830      84904
+
+======         QtWebProcess        Pss ==========================
+/usr/lib/libQt5WebKit.so.5.0.0                                           8008 K
+[heap]                                                                   6084 K
+/usr/lib/libQt5WebKit.so.5.0.0                                            928 K
+/usr/lib/libQt5Gui.so.5.0.0                                               791 K
+/usr/lib/libQt5Core.so.5.0.0                                              549 K
+/usr/lib/libQt5Widgets.so.5.0.0                                           320 K
+/usr/lib/libQt5DBus.so.5.0.0                                              280 K
+/usr/lib/qt5/plugins/platforms/libqwayland-egl.so                         233 K
+/usr/lib/libusc.so.0.1                                                    227 K
+/usr/lib/libQt5Network.so.5.0.0                                           182 K
+======            WebAppMgr        Pss ==========================
+[heap]                                                                   5348 K
+/usr/lib/libQt5WebKit.so.5.0.0                                           2272 K
+/usr/lib/libQt5WebKit.so.5.0.0                                            932 K
+/usr/lib/libQt5V8.so.5.0.0                                                707 K
+/usr/lib/libQt5Core.so.5.0.0                                              552 K
+/usr/lib/libQt5Qml.so.5.0.0                                               341 K
+/usr/lib/libQt5Widgets.so.5.0.0                                           328 K
+/usr/lib/libWebAppMgr.so.1.0.0                                            308 K
+/usr/lib/libQt5Quick.so.5.0.0                                             263 K
+/usr/lib/libusc.so.0.1                                                    223 K
+======      surface-manager        Pss ==========================
+[heap]                                                                   8420 K
+/usr/lib/libQt5Quick.so.5.0.0                                             899 K
+/usr/lib/libQt5V8.so.5.0.0                                                765 K
+/usr/lib/libQt5Qml.so.5.0.0                                               579 K
+/usr/lib/libQt5Core.so.5.0.0                                              523 K
+/usr/lib/libQt5Gui.so.5.0.0                                               373 K
+/usr/lib/qt5/plugins/platforms/libqstarfishegl.so                         320 K
+/usr/lib/libusc.so.0.1                                                    227 K
+/usr/lib/qt5/qml/WebOSCompositor/libweboscompositorplugin.so              164 K
+/usr/lib/libQt5Compositor.so.5.0.0                                        148 K
+Sleep 5 secs ...
+Close 1001
+luna-send -n 1 palm://com.palm.applicationManager/close {"processId":"1001"}
+{"appId":"com.palm.app.baremoon2","processId":"1001","returnValue":true}
+Sleep 5 secs ...
+Record 2_after_closed ...
+--------------------------------------------------------------------------------------------------------------
+MemTotal:        1204808 kB
+MemFree:          862616 kB
+Buffers:              52 kB
+Cached:            64552 kB
+--------------------------------------------------------------------------------------------------------------
+        Process Name        PID        RSS        PSS    PVR_MEM        SHC        SHD        PRC        PRD
+==============================================================================================================
+        QtWebProcess       2164      47864      37984      23228      14220          8       8148      25488
+           WebAppMgr       1705      30456      18095     -13844      17628          8       1472      11348
+  QtWebProcess + WAM                 78320      56079       9384
+     surface-manager       1628      92348      82792       8168      12964         76       1704      77604
+--------------------------------------------------------------------------------------------------------------
+               Total     170668     138871      17552
+
+======         QtWebProcess        Pss ==========================
+/usr/lib/libQt5WebKit.so.5.0.0                                           8058 K
+[heap]                                                                   6084 K
+/usr/lib/libQt5WebKit.so.5.0.0                                            928 K
+/usr/lib/libQt5Gui.so.5.0.0                                               787 K
+/usr/lib/libQt5Core.so.5.0.0                                              549 K
+/usr/lib/libQt5Widgets.so.5.0.0                                           320 K
+/usr/lib/libQt5DBus.so.5.0.0                                              280 K
+/usr/lib/qt5/plugins/platforms/libqwayland-egl.so                         233 K
+/usr/lib/libusc.so.0.1                                                    227 K
+/usr/lib/libQt5Network.so.5.0.0                                           182 K
+======            WebAppMgr        Pss ==========================
+[heap]                                                                   5348 K
+/usr/lib/libQt5WebKit.so.5.0.0                                           2270 K
+/usr/lib/libQt5WebKit.so.5.0.0                                            932 K
+/usr/lib/libQt5V8.so.5.0.0                                                707 K
+/usr/lib/libQt5Core.so.5.0.0                                              553 K
+/usr/lib/libQt5Qml.so.5.0.0                                               347 K
+/usr/lib/libQt5Widgets.so.5.0.0                                           328 K
+/usr/lib/libWebAppMgr.so.1.0.0                                            308 K
+/usr/lib/libQt5Quick.so.5.0.0                                             268 K
+/usr/lib/libusc.so.0.1                                                    223 K
+======      surface-manager        Pss ==========================
+[heap]                                                                   8420 K
+/usr/lib/libQt5Quick.so.5.0.0                                             906 K
+/usr/lib/libQt5V8.so.5.0.0                                                765 K
+/usr/lib/libQt5Qml.so.5.0.0                                               577 K
+/usr/lib/libQt5Core.so.5.0.0                                              523 K
+/usr/lib/libQt5Gui.so.5.0.0                                               373 K
+/usr/lib/qt5/plugins/platforms/libqstarfishegl.so                         320 K
+/usr/lib/libusc.so.0.1                                                    227 K
+/usr/lib/qt5/qml/WebOSCompositor/libweboscompositorplugin.so              164 K
+/usr/lib/libQt5Compositor.so.5.0.0                                        148 K
+Sleep 180 sec ...
+Record 3_after_closed_sleep ...
+--------------------------------------------------------------------------------------------------------------
+MemTotal:        1204808 kB
+MemFree:          902892 kB
+Buffers:              52 kB
+Cached:            56380 kB
+--------------------------------------------------------------------------------------------------------------
+        Process Name        PID        RSS        PSS    PVR_MEM        SHC        SHD        PRC        PRD
+==============================================================================================================
+           WebAppMgr       1705      30456      20871     -13844      13620          8       5480      11348
+     surface-manager       1628      92348      83405       8168      12872         76       1796      77604
+--------------------------------------------------------------------------------------------------------------
+               Total     122804     104276      -5676
+
+======            WebAppMgr        Pss ==========================
+[heap]                                                                   5348 K
+/usr/lib/libQt5WebKit.so.5.0.0                                           3728 K
+/usr/lib/libQt5WebKit.so.5.0.0                                            932 K
+/usr/lib/libQt5Core.so.5.0.0                                              821 K
+/usr/lib/libQt5V8.so.5.0.0                                                716 K
+/usr/lib/libQt5Widgets.so.5.0.0                                           494 K
+/usr/lib/libQt5Qml.so.5.0.0                                               369 K
+/usr/lib/libusc.so.0.1                                                    334 K
+/usr/lib/libWebAppMgr.so.1.0.0                                            308 K
+/usr/lib/libQt5Quick.so.5.0.0                                             299 K
+======      surface-manager        Pss ==========================
+[heap]                                                                   8420 K
+/usr/lib/libQt5Quick.so.5.0.0                                             937 K
+/usr/lib/libQt5V8.so.5.0.0                                                774 K
+/usr/lib/libQt5Core.so.5.0.0                                              613 K
+/usr/lib/libQt5Qml.so.5.0.0                                               599 K
+/usr/lib/libQt5Gui.so.5.0.0                                               499 K
+/usr/lib/libusc.so.0.1                                                    342 K
+/usr/lib/qt5/plugins/platforms/libqstarfishegl.so                         320 K
+/usr/lib/libGLESv2.so.2.0                                                 205 K
+/usr/lib/libglslcompiler.so.0.1                                           168 K
+--------------------------------------------------------------------------------------------------------------
+Free Mem analysis:
+1. Before app launch:        907444 kB
+2. After app started:        795152 kB
+3. After app closed:         862616 kB
+4. After app closed + 3 min: 902892 kB
+Free Mem consumprion (1)-(2) 112292
+Free Mem consumption (2)-(4) -107740
+Free Mem consumption (1)-(4) 4552
+Done :-D

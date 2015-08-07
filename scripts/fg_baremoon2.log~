@@ -1,0 +1,54 @@
+# ./run_mem_state_auto.sh 
+----------------------------------------------------------------------
+MemTotal:        1208776 kB
+MemFree:          875336 kB
+Buffers:              80 kB
+Cached:            62208 kB
+----------------------------------------------------------------------
+        Process Name        PSS    PVR_MEM
+======================================================================
+        QtWebProcess      34168       2544
+           WebAppMgr      14490       2540
+  QtWebProcess + WAM                  5084
+     surface-manager      83754       8160
+----------------------------------------------------------------------
+               Total     132412      13244
+Launch com.palm.app.baremoon2 ...
+{"returnValue":true,"processId":"1001"}
+Sleep 300 secs ...
+----------------------------------------------------------------------
+MemTotal:        1208776 kB
+MemFree:          777600 kB
+Buffers:            1304 kB
+Cached:            78520 kB
+----------------------------------------------------------------------
+        Process Name        PSS    PVR_MEM
+======================================================================
+        QtWebProcess      43844      32676
+           WebAppMgr      18186      27860
+  QtWebProcess + WAM                 60536
+     surface-manager      82761      24368
+----------------------------------------------------------------------
+               Total     144791      84904
+Sleep 5 secs ...
+Close 1001
+luna-send -n 1 palm://com.palm.applicationManager/close {"processId":"1001"}
+{"appId":"com.palm.app.baremoon2","processId":"1001","returnValue":true}
+Sleep 5 secs ...
+----------------------------------------------------------------------
+MemTotal:        1208776 kB
+MemFree:          859244 kB
+Buffers:              64 kB
+Cached:            65284 kB
+----------------------------------------------------------------------
+        Process Name        PSS    PVR_MEM
+======================================================================
+        QtWebProcess      43844      23228
+           WebAppMgr      18202     -13844
+  QtWebProcess + WAM                  9384
+     surface-manager      82765       8168
+----------------------------------------------------------------------
+               Total     144811      17552
+Done :-D
+# 
+

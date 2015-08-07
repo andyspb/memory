@@ -1,0 +1,23 @@
+lunch  apps and record memory print after each app is completely loaded.
+"Clock"
+luna-send -n 1 palm://com.webos.applicationManager/launch '{"id":"com.palm.app.clock"}'
+
+"Settings"
+ luna-send -n 1 palm://com.webos.applicationManager/launch '{"id":"com.palm.app.settings"}'
+
+"Enyo2Sampler"
+ luna-send -n 1 palm://com.webos.applicationManager/launch '{"id":"com.palm.app.enyo2sampler"}'
+ 
+"Facebook"
+ luna-send -n 1 palm://com.webos.applicationManager/launch '{"id":"com.palm.app.facebook2"}'
+
+"Photos & Videos"
+ luna-send -n 1 palm://com.webos.applicationManager/launch '{"id":"com.palm.app.photos"}'
+
+Now close the apps one by one in order 
+"Photos & Videos"
+"Facebook"
+"Enyo2Sampler"
+"Settings"
+"Clock"
+ and take memory print after each app is closed.

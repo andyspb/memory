@@ -1,0 +1,18 @@
+#!/bin/bash
+
+WAM_LOG="WAM.log"
+KERNEL_LOG="dmesg.log"
+
+if [ ! -z $1 ]; then
+    WAM_LOG="$1"
+fi
+
+if [ ! -z $2 ]; then
+    KERNEL_LOG="$2"
+fi
+
+BTIME=$(grep btime btime | awk '{print $2}')
+# cat $WAM_LOG | awk -v btime=$BTIME '{ $3 = $3 - btime; print}' > ${WAM_LOG}.adjusted
+cat $WAM_LOG | awk -v btime=$BTIME '{ $3 = $3 - btime; tmp = $1; $1=$3; $3 = tmp; print}' > ${WAM_LOG}.adjusted
+
+comm ${WAM_LOG}.adjusted $KERNEL_LOG

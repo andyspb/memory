@@ -1,0 +1,227 @@
+# ./run_mem_state_auto_mult_apps.sh 
+----------------------------------------------------------------------
+MemTotal:        1208776 kB
+MemFree:          911068 kB
+Buffers:              40 kB
+Cached:            56060 kB
+----------------------------------------------------------------------
+        Process Name        PSS    PVR_MEM
+======================================================================
+           WebAppMgr      16893       2540
+  QtWebProcess + WAM                  2540
+     surface-manager      84010       8160
+----------------------------------------------------------------------
+               Total     100903      10700
+Launch com.palm.app.clock ...
+{"returnValue":true,"processId":"1001"}
+Sleep  180  secs ...
+----------------------------------------------------------------------
+MemTotal:        1208776 kB
+MemFree:          786116 kB
+Buffers:              40 kB
+Cached:            80604 kB
+----------------------------------------------------------------------
+        Process Name        PSS    PVR_MEM
+======================================================================
+        QtWebProcess      45074      33108
+           WebAppMgr      18123      15572
+  QtWebProcess + WAM                 48680
+     surface-manager      82790      24368
+----------------------------------------------------------------------
+               Total     145987      73048
+Launch com.palm.app.settings ...
+{"returnValue":true,"processId":"1003"}
+Sleep  180  secs ...
+----------------------------------------------------------------------
+MemTotal:        1208776 kB
+MemFree:          704532 kB
+Buffers:              40 kB
+Cached:            70320 kB
+----------------------------------------------------------------------
+        Process Name        PSS    PVR_MEM
+======================================================================
+        QtWebProcess      55553      64368
+           WebAppMgr      19409      47760
+  QtWebProcess + WAM                112128
+     surface-manager      82777      40568
+----------------------------------------------------------------------
+               Total     157739     152696
+Launch com.palm.app.enyo2sampler ...
+{"returnValue":true,"processId":"1005"}
+Sleep  180  secs ...
+----------------------------------------------------------------------
+MemTotal:        1208776 kB
+MemFree:          560032 kB
+Buffers:              40 kB
+Cached:            70232 kB
+----------------------------------------------------------------------
+        Process Name        PSS    PVR_MEM
+======================================================================
+        QtWebProcess      60795      -8496
+           WebAppMgr      21258      36272
+  QtWebProcess + WAM                 27776
+     surface-manager      82874          0
+----------------------------------------------------------------------
+               Total     164927      27776
+Launch com.palm.app.facebook2 ...
+{"returnValue":true,"processId":"1006"}
+Sleep  180  secs ...
+----------------------------------------------------------------------
+MemTotal:        1208776 kB
+MemFree:          644468 kB
+Buffers:              40 kB
+Cached:            69084 kB
+----------------------------------------------------------------------
+        Process Name        PSS    PVR_MEM
+======================================================================
+        QtWebProcess      64292     -34368
+           WebAppMgr      22774    -108092
+  QtWebProcess + WAM               -142460
+     surface-manager      82914      16200
+----------------------------------------------------------------------
+               Total     169980    -126260
+Launch com.palm.app.photos ...
+{"returnValue":true,"processId":"1007"}
+Sleep  180  secs ...
+----------------------------------------------------------------------
+MemTotal:        1208776 kB
+MemFree:          565712 kB
+Buffers:              40 kB
+Cached:            69684 kB
+----------------------------------------------------------------------
+        Process Name        PSS    PVR_MEM
+======================================================================
+        QtWebProcess      74973      18228
+           WebAppMgr      24246    -100308
+  QtWebProcess + WAM                -82080
+     surface-manager      83030      32400
+----------------------------------------------------------------------
+               Total     182249     -49680
+Sleep 180 secs ...
+Closing  com.palm.app.photos
+luna-send -n 1 palm://com.palm.applicationManager/closeByAppId '{"id":"com.palm.app.photos"}'
+{"appId":"com.palm.app.photos","returnValue":true}
+Sleep  10  secs ...
+----------------------------------------------------------------------
+MemTotal:        1208776 kB
+MemFree:          673048 kB
+Buffers:              40 kB
+Cached:            68344 kB
+----------------------------------------------------------------------
+        Process Name        PSS    PVR_MEM
+======================================================================
+        QtWebProcess      74718       7524
+           WebAppMgr      24276    -202844
+  QtWebProcess + WAM               -195320
+     surface-manager      83027          0
+----------------------------------------------------------------------
+               Total     182021    -195320
+Closing  com.palm.app.facebook2
+luna-send -n 1 palm://com.palm.applicationManager/closeByAppId '{"id":"com.palm.app.facebook2"}'
+{"appId":"com.palm.app.facebook2","returnValue":true}
+Sleep  10  secs ...
+----------------------------------------------------------------------
+MemTotal:        1208776 kB
+MemFree:          673508 kB
+Buffers:              40 kB
+Cached:            67208 kB
+----------------------------------------------------------------------
+        Process Name        PSS    PVR_MEM
+======================================================================
+        QtWebProcess      74670       7524
+           WebAppMgr      24268    -202844
+  QtWebProcess + WAM               -195320
+     surface-manager      84027          0
+----------------------------------------------------------------------
+               Total     182965    -195320
+Closing  com.palm.app.enyo2sampler
+luna-send -n 1 palm://com.palm.applicationManager/closeByAppId '{"id":"com.palm.app.enyo2sampler"}'
+{"appId":"com.palm.app.enyo2sampler","returnValue":true}
+Sleep  10  secs ...
+----------------------------------------------------------------------
+MemTotal:        1208776 kB
+MemFree:          690868 kB
+Buffers:              40 kB
+Cached:            67204 kB
+----------------------------------------------------------------------
+        Process Name        PSS    PVR_MEM
+======================================================================
+        QtWebProcess      74670       7524
+           WebAppMgr      24268    -205284
+  QtWebProcess + WAM               -197760
+     surface-manager      84031     -16200
+----------------------------------------------------------------------
+               Total     182969    -213960
+Closing  com.palm.app.settings
+luna-send -n 1 palm://com.palm.applicationManager/closeByAppId '{"id":"com.palm.app.settings"}'
+{"appId":"com.palm.app.settings","returnValue":true}
+Sleep  10  secs ...
+----------------------------------------------------------------------
+MemTotal:        1208776 kB
+MemFree:          769744 kB
+Buffers:              40 kB
+Cached:            67340 kB
+----------------------------------------------------------------------
+        Process Name        PSS    PVR_MEM
+======================================================================
+        QtWebProcess      74674      14136
+           WebAppMgr      24268    -156028
+  QtWebProcess + WAM               -141892
+     surface-manager      84031     -32400
+----------------------------------------------------------------------
+               Total     182973    -174292
+Closing  com.palm.app.clock
+luna-send -n 1 palm://com.palm.applicationManager/closeByAppId '{"id":"com.palm.app.clock"}'
+{"appId":"com.palm.app.clock","returnValue":true}
+Sleep  10  secs ...
+----------------------------------------------------------------------
+MemTotal:        1208776 kB
+MemFree:          811436 kB
+Buffers:              40 kB
+Cached:            67312 kB
+----------------------------------------------------------------------
+        Process Name        PSS    PVR_MEM
+======================================================================
+        QtWebProcess      74522      14136
+           WebAppMgr      24272    -157588
+  QtWebProcess + WAM               -143452
+     surface-manager      84039     -64800
+----------------------------------------------------------------------
+               Total     182833    -208252
+Done :-D
+# echo 3 > /proc/sys/vm/drop_caches | cat /proc/meminfo | grep MemFree
+MemFree:          812620 kB
+# echo 3 > /proc/sys/vm/drop_caches | cat /proc/meminfo | grep MemFree
+MemFree:          813132 kB
+# echo 3 > /proc/sys/vm/drop_caches | cat /proc/meminfo | grep MemFree
+MemFree:          812744 kB
+# echo 3 > /proc/sys/vm/drop_caches | cat /proc/meminfo | grep MemFree
+MemFree:          885760 kB
+# echo 3 > /proc/sys/vm/drop_caches | cat /proc/meminfo | grep MemFree
+MemFree:          891884 kB
+# echo 3 > /proc/sys/vm/drop_caches | cat /proc/meminfo | grep MemFree
+MemFree:          891836 kB
+# echo 3 > /proc/sys/vm/drop_caches | cat /proc/meminfo | grep MemFree
+MemFree:          892052 kB
+# echo 3 > /proc/sys/vm/drop_caches | cat /proc/meminfo | grep MemFree
+MemFree:          892176 kB
+# echo 3 > /proc/sys/vm/drop_caches | cat /proc/meminfo | grep MemFree
+MemFree:          896992 kB
+# echo 3 > /proc/sys/vm/drop_caches | cat /proc/meminfo | grep MemFree
+MemFree:          897192 kB
+# echo 3 > /proc/sys/vm/drop_caches | cat /proc/meminfo | grep MemFree
+MemFree:          897456 kB
+# echo 3 > /proc/sys/vm/drop_caches | cat /proc/meminfo | grep MemFree
+MemFree:          897456 kB
+# echo 3 > /proc/sys/vm/drop_caches | cat /proc/meminfo | grep MemFree
+MemFree:          897300 kB
+# echo 3 > /proc/sys/vm/drop_caches | cat /proc/meminfo | grep MemFree
+MemFree:          897500 kB
+# echo 3 > /proc/sys/vm/drop_caches | cat /proc/meminfo | grep MemFree
+MemFree:          897404 kB
+# echo 3 > /proc/sys/vm/drop_caches | cat /proc/meminfo | grep MemFree
+MemFree:          897404 kB
+# echo 3 > /proc/sys/vm/drop_caches | cat /proc/meminfo | grep MemFree
+MemFree:          897208 kB
+# 
+
